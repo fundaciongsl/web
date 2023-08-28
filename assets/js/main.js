@@ -1,9 +1,19 @@
-/*
-	Miniport by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
+function sendEmail() {
+	Email.send({
+	  /* Host: "smtp.gmail.com",
+	  Username: "palquilarstartup@gmail.com",
+	  Password: "yihbunnotfaqreyc",
+	  To: 'felcmna.23@gmail.com',
+	  From: "palquilarstartup@gmail.com",
+	  Subject: "Sending Email using javascript",
+	  Body: "Well that was easy!!",
+      EMAIL_PORT:587 */
+	})
+	  .then(function (message) {
+		alert("Se envio correctamente el mensaje")
+	  });
+  };
+  
 (function($) {
 
 	var	$window = $(window),

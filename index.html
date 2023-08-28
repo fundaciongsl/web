@@ -189,24 +189,26 @@
 					</header>
 					<div class="row">
 						<div class="col-12">
-							<form method="post" action="#">
+							<form method="post" action="https://formsubmit.co/fundacionguaduassinlimites@gmail.com">
 								<div class="row">
 									<div class="col-6 col-12-small">
-										<input type="text" name="name" id="name" placeholder="Nombres" />
+										<input type="text" name="name" id="name" placeholder="Nombres" required/>
 									</div>
 									<div class="col-6 col-12-small">
-										<input type="text" name="email" id="email" placeholder="Email" />
+										<input type="text" name="email" id="email" placeholder="Email" required/>
 									</div>
 									<div class="col-12">
-										<input type="text" name="subject" id="subject" placeholder="Asunto" />
+										<input type="text" name="subject" id="subject" placeholder="Asunto" required/>
 									</div>
 									<div class="col-12">
-										<textarea name="message" id="message" placeholder="Deja tu Mensaje"></textarea>
+										<textarea name="comments" id="message" placeholder="Deja tu Mensaje" required></textarea>
 									</div>
 									<div class="col-12">
 										<ul class="actions">
-											<li><input type="submit" value="Send Message" /></li>
+											<li><input type="submit" value="Enviar" /></li>
 											<li><input type="reset" value="Clear Form" class="alt" /></li>
+											<input type="hidden" name="_captcha" value="false">
+											<input type="hidden" name="_autoresponse" value="felix your custom message">
 										</ul>
 									</div>
 								</div>
@@ -247,6 +249,8 @@
 			</article>
 
 		<!-- Scripts -->
+		    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
